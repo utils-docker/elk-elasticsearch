@@ -1,0 +1,13 @@
+cluster.name: "elasticsearch"
+node.name: "elasticsearch-1"
+network.host: 0.0.0.0
+transport.host: 127.0.0.1
+discovery.zen.minimum_master_nodes: 1
+bootstrap.mlockall: true
+gateway.recover_after_nodes: 1
+gateway.recover_after_time: 10m
+gateway.expected_nodes: 2
+action.disable_close_all_indices: true
+action.disable_delete_all_indices: true
+action.disable_shutdown: true
+indices.recovery.max_bytes_per_sec: 100mb
